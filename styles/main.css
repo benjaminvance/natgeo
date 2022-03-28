@@ -1,6 +1,15 @@
 /*global*/
+:root{
+    --primary: #ffcc08;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+}
+a{
+    text-decoration: none;
 }
 p{
     line-height: 2;
@@ -17,3 +26,80 @@ p.read-btn{
 }
 
 /*nav*/
+.nagivation-bar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: white;
+}
+.menu{
+    flex-basis: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ng-logo,.link-search,.link-renew,.link-menu{
+    display:none;
+}
+.ng-logo-border{
+    width:20px;
+    height: 30px;
+    padding: 10px;
+}
+.link-login{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+.link-subs{
+    text-transform: uppercase;
+    font-size: 13px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 3px;
+    padding: 15px;
+}
+.link-subs:hover{
+    color:black;
+    background-color: var(--primary);
+}
+.link-arrows{
+    color: black;
+    margin-right: 20px;
+}
+
+/*main*/
+h1{
+    text-transform: uppercase;
+}
+
+/*header*/
+.header{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+.subscribe{
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.subscribe span{
+    text-decoration: underline 3px #ffcc08;
+}
+.subscribe span:hover{
+    background-color: var(--primary);
+    color: black;
+}
+.border{
+    border: solid 3px var(--primary);
+    width: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
