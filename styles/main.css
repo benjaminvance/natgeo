@@ -17,20 +17,35 @@ p{
 img{
     max-width: 100%;
 }
+h3{
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 5px;
+    color: white;
+}
+h3:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 /*utilities*/
 p.read-btn{
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
+    letter-spacing: 5px;
 }
-
+.container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
 /*nav*/
 .nagivation-bar{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
+    height: 55px;
     background-color: white;
 }
 .menu{
@@ -54,6 +69,7 @@ p.read-btn{
     font-weight: 700;
     letter-spacing: 3px;
 }
+/*mine
 .link-subs{
     text-transform: uppercase;
     font-size: 13px;
@@ -67,10 +83,27 @@ p.read-btn{
     color:black;
     background-color: var(--primary);
 }
+
 .link-arrows{
     color: black;
     margin-right: 20px;
 }
+*/
+
+.link-subs{
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    background-image: linear-gradient(to left, black 50%, var(--primary) 50%);
+    transition: background-position .2s ease-in-out, color .2s ease-in-out;
+    color:white;
+    padding:1rem;
+}
+
+.link-subs:hover{
+    background-position: 0% 0;
+    color:black;
+}
+
 
 /*main*/
 h1{
@@ -84,22 +117,116 @@ h1{
     font-weight: 700;
     letter-spacing: 5px;
 }
-.subscribe{
+
+.sub-word{
     text-align: center;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
-.subscribe span{
+.sub-word span{
     text-decoration: underline 3px #ffcc08;
 }
-.subscribe span:hover{
+.sub-word span:hover{
     background-color: var(--primary);
     color: black;
 }
+
+/*class
+.sub-word{
+    border-bottom:2px solid var(--primary);
+    background-size: 100% 200%;
+    background-image:linear-gradient(to bottom, black 50%, var(--primary) 50%);
+    transition: background-position .1s ease-in-out, color .1s ease-in-out;
+}
+
+.sub-word span:hover{
+    background-position: 0 100%;
+    color:black;
+    cursor:pointer;
+}
+*/
+
 .border{
     border: solid 3px var(--primary);
     width: 30px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/*main news*/
+.main-news{
+    position:relative;
+    margin-bottom: 20px;
+}
+.main-news-img{
+    height: 400px;
+}
+.main-new-img img{
+    max-height: 100%;
+}
+.main-news-text{
+    position: absolute;
+    top: 120px;
+    left: 20px;
+}
+.main-news-text p.title{
+    color: white;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.main-news-text p.read-btn{
+    color: white;
+}
+
+/*secondary news*/
+.secondary-news{
+    margin-bottom: 20px;
+}
+.secondary-news-img img{
+    max-height: 100%;
+}
+.secondary-news-text{
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin-top: -5px;
+}
+.secondary-news-text p.title{
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+.secondary-news-text h3{
+    color:gray;
+    padding-bottom: 0;
+}
+.secondary-news-text h3 span{
+    font-weight: 300;
+}
+.secondary-news-text p.title{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/*todays picks*/
+.pick-item{
+    display:grid;
+    grid-template-columns: 100px 300px;
+    margin-bottom: 20px;
+    column-gap: 30px;
+}
+.pick-item img{
+    width: 100px;
+    height: 100px;
+}
+.picks-text p{
+    color: white;
+    font-weight: 700;
+    line-height: 1.5;;
+}
+.picks-text p:hover{
+    text-decoration: underline;
 }
