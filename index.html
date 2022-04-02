@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-
+    <link rel="shortcut icon" href="img/favicon.ico">
     <title>National Geographic</title>
 </head>
 <body>
@@ -35,7 +35,8 @@
 
         </div>
     </header>
-    <main class="container">
+    <div class="flex-container container">
+    <main>
         <div class="main-news">
             <div class="main-news-img">
                 <img src="img/trex.webp" alt="Dinosaur">
@@ -51,22 +52,23 @@
             <div class="secondary-news-img">
                 <img src="img/pandemic.webp" alt="">
             </div>
+            <div class="secondary-news-container">
             <div class="secondary-news-text">
                 <h3>Science</h3>
                 <p>The 1918 pandemic mistake that changed medicine forever</p>
                 <p class="read-btn"><i class="fas fa-bars"></i> Read</p>
             </div>
-        </div>
             <div class="secondary-news">
                 <div class="secondary-news-img">     
                     <img src="img/fish.jpg" alt="Freshwater fish">
-                </div> 
+                </div>
                 <div class="secondary-news-text">
                     <h3>Environment <span>Planet Possible</span></h3>
                     <p>Inside the plan to save some of the biggest freshwater fish</p>
                     <p class="read-btn"><i class="fas fa-bars"></i> Read</p>
-                </div> 
-             </div>
+                </div><!--secondary news text-->
+             </div><!--secondary news-->
+        </div><!--secondary news container-->
     </main> <!--main ends-->
     <section class="todays-picks-container container">
         <div class="border2">
@@ -116,5 +118,6 @@
             </div>
         </div>
     </section>
+</div>
 </body>
 </html>

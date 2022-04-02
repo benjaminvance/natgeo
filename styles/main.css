@@ -40,6 +40,16 @@ p.read-btn{
     margin-left: auto;
     margin-right: auto;
 }
+
+@media(min-width:768px){
+    .container{
+        width: 75%;
+    }
+    .flex-container{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
 /*nav*/
 .nagivation-bar{
     display:flex;
@@ -104,6 +114,51 @@ p.read-btn{
     color:black;
 }
 
+@media(min-width:768px){
+    .menu{
+        flex-basis: 400xp;
+    }
+    .ng-logo,.link-search,.link-renew,.link-menu{
+        display:block;
+    }
+    .ng-logo-border{
+        display: none;
+    }
+    .ng-logo{
+        width:100px;
+        margin-left: 20px;
+    }
+    .link-search{
+        color: black;
+    }
+    .link-renew{
+        color: black;
+        font-weight: normal;
+        text-transform: capitalize;
+        border-bottom: 2px solid var(--primary);
+        background-size: 100% 200%;
+        background-image: linear-gradient(to bottom, #fff 50%, var(--primary) 50%);
+        transition: background-position .2s ease-in-out, color .2s ease-in-out;
+        margin: 15px;
+    }
+    .link-renew:hover{
+        background-position: 0 100%;
+        color: black;
+        cursor: pointer;
+    }
+    .link-menu{
+        text-transform: uppercase;
+        font-size: 15px;
+        color: black;
+        font-weight: 700;
+        letter-spacing: 3px;
+        padding: 20px;
+    }
+    .link-login{
+        padding: 15px;
+    }
+    
+}
 
 /*main*/
 h1{
@@ -215,11 +270,32 @@ h1{
     font-size: 20px;
     font-weight: 700;
 }
+/*
+@media(min-width: 768px){
+    .secondary-news-container{
+        display: flex;
+        justify-content: space-between;
+        width: 35rem;
+    }
+    .secondary-news{
+        width:calc(50% - 1rem);
+        height: 25rem;
+    }
+    .main-news{
+        width: 100%;
+    }
+    .secondary-news-img{
+        width: 100%;
+        height: 20rem;
+    }
+}
+
 
 /*todays picks*/
 .todays-picks-container h2{
     text-transform: uppercase;
     letter-spacing: 2px;
+    display: grid;
 }
 
 .pick-item{
